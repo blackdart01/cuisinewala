@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/v4-shims.css">
+    <title>CUISINEWALA Cart</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="bg-blur"></div>
+        <a href="index.htm" class="nav-brand">
+            <!-- <img class="nav-img" src="hillshire.jpg" alt=""> -->
+            <i class="fas fa-hamburger" style="font-size: 30px;margin-right:10px;"></i>
+            <p> <b class="logo"> CUISINEWALA</b></p>
+        </a>
+        <ul class="list">
+            <li class="list-item"><a href="index.htm"><i class="fas fa-home"></i> Home</a></li>
+            <li class="list-item"><a href="book.htm"><i class="fas fa-utensils"></i> Book</a></li>
+            <li class="list-item"><a href="contact.htm"><i class="fas fa-info-circle"></i> Contact</a></li>
+            <li class="list-item"><a href="cart.htm" class="active"><i class="fas fa-cart-plus"></i> Cart</a></li>
+            <li class="list-item"><a href="#" class="signin">Sign In</a></li>
+        </ul>
+    </nav>
+    <section class="emptycart">
+        <img src="empty-cart.png" alt="">
+        <p>You have added nothing in your cart. I'm starving please add some food from the home menu!!!</p>
+        <button class="search_rt" onclick="location.href = 'index.htm';" type="button">Search Restaurants
+            Near You
+        </button>
+    </section>
+    <!-- <img class="hell" src="hamburger-solid.svg" alt=""> -->
+    <section class="delivery">
+        <div class="acc">
+            <p class="acc-head"><i class="fas fa-user"></i> Account</p>
+            <p class="meta">To place your order now, log in to your Account or Create one for your hungry tummy.</p>
+            <div class="btn-login">
+                <button type="button" class="open-button"
+                    onclick="var x=document.getElementById('myForm');var y=document.getElementById('mysignupForm');if(x.style.display=='none'&&y.style.display=='none'){ x.style.display='block';} else if(x.style.display=='none'&&y.style.display=='block'){ x.style.display='block';y.style.display='none';} else{x.style.display='none';} ">LOGIN</button>
+                <button type="button" class="open-button"
+                    onclick="var x=document.getElementById('myForm');var y=document.getElementById('mysignupForm');if(x.style.display=='none'&&y.style.display=='none'){ y.style.display='block';} else if(x.style.display=='block'&&y.style.display=='none'){ x.style.display='none';y.style.display='block';} else{y.style.display='none';} ">SIGNUP</button>
+                <!-- onclick="window.open('signup.htm')" -->
+                <div class="form-popup" id="myForm">
+                    <form action="/action_page.php" class="form-container" id="ff">
+                        <h1>Login</h1>
+
+                        <label for="email"><b>Email</b></label>
+                        <input type="text" placeholder="Enter Email" name="email" required>
+
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+
+                        <button type="submit" class="btn">Login</button>
+                    </form>
+                </div>
+                <div class="form-popup" id="mysignupForm">
+                    <form action="/action_page.php" class="form-container">
+                        <h1>Sign UP</h1>
+
+                        <label for="fname"><b>Name</b></label>
+                        <input type="text" placeholder="Enter Name" name="name" required>
+
+                        <label for="contact"><b>Contact Number</b></label>
+                        <input type="tel" placeholder="Enter Phone no." name="contact" required>
+
+                        <label for="email"><b>Email</b></label>
+                        <input type="text" placeholder="Enter Email" name="email" required>
+
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+
+                        <button type="submit" class="btn">Login</button>
+                        <!-- <button type="button" class="btn cancel"
+                                            onclick="document.getElementById('myForm').style.display='none'">Close</button> -->
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="del-address">
+            <p class="acc-head unlink"><i class="fas fa-building"></i> Delivery Address</p>
+            <div class="loc-marker">
+                <div class="loc1">
+                    <i class="fas fa-map-marker-alt unlink" style="margin:0 -5px 0 5px;"></i>
+                    <p style="margin-left: 10px;" class="unlink">-------- Pandri Bus Stand, Raipur </p>
+                </div>
+                <div class="loc1">
+                    <i class="fas fa-map-marker-alt unlink" style="margin:0 -5px 0 5px;"></i>
+                    <p style="margin-left: 10px;" class="unlink">-------- Ghadi Chowk, Raipur </p>
+                </div>
+            </div>
+        </div>
+        <div class="pay">
+            <p class="acc-head unlink"><i class="fas fa-money-check"></i> Payment</p>
+            <div class="btn-login">
+                <button type="button" class=" unlink-bg">Online</button>
+                <button type="button" class=" unlink-bg">Cash on Delivery</button>
+            </div>
+        </div>
+    </section>
+    <br><br><br><br>
+</body>
+
+</html>
+
+
+
+Hello Juniors,
+For Tech Geeks, I've the task:
+
+Explain Quantum Computing in lucrative manner in between 200 - 300 words
+Amit Prasad
+Abhishek Sonwani
+G Shreyas
+
+Have you heard about graphene? Write about it in no more than 300 words
+Rudra Magharia
+Aaditya Dey
+Rishabh Dev Nayak
+Hardik Kaushik

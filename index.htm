@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/v4-shims.css">
+    <title>CUISINEWALA</title>
+</head>
+<script>
+    function came() {
+        document.getElementById('shift-to').scrollIntoView();
+        var place = document.getElementById('place').value;
+        var loc = document.getElementById('loc-loc');
+        place = place.toUpperCase();
+        loc.innerHTML = place;
+    }
+</script>
+
+<body>
+    <nav class="navbar">
+        <div class="bg-blur"></div>
+        <a href="index.htm" class="nav-brand">
+            <!-- <img class="nav-img" src="hillshire.jpg" alt=""> -->
+            <i class="fas fa-hamburger" style="font-size: 30px;margin-right:10px;"></i>
+            <p> <b class="logo"> CUISINEWALA</b></p>
+        </a>
+        <ul class="list">
+            <li class="list-item"><a href="index.htm" class="active"><i class="fas fa-cart-plus"></i> Home</a></li>
+            <li class="list-item"><a href="book.htm"><i class="fas fa-utensils"></i> Book</a></li>
+            <li class="list-item"><a href="contact.htm"><i class="fas fa-info-circle"></i> Contact</a></li>
+            <li class="list-item"><a href="cart.htm"><i class="fas fa-cart-plus"></i> Cart</a></li>
+            <li class="list-item"><a href="#" class="signin">Sign In</a></li>
+        </ul>
+    </nav>
+    <section class="home">
+        <div class="bg-img">
+            <img src="hillshire.jpg" alt="">
+        </div>
+        <div class="getPlace">
+            <!-- <label for="place">Enter Location: </label> -->
+            <div class="main-head-bg"></div>
+            <p class="main-head">Welcome to THE CUISINEWALA</p>
+            <p class="sub-head">Zaraa Chakh Ke to Dekho...</p>
+            <input type="text" id="place" name="place" placeholder="Enter Location">
+            <button type="button" onclick="came()">Submit</button>
+        </div>
+    </section>
+    <section class="home-menu">
+        <h2>Popular Restaurants in <span id="loc-loc" style="font-family: lato;">Location</span></h2>
+        <div class="cards" id="shift-to">
+            <div class="card">
+                <img src="hillshire.jpg" alt="">
+                <div class="meta-data">
+                    <p class="title">Veg. Burger </p>
+                    <p class="rsturnt title"> - The Taj</p>
+                    <p class="tags">food, veg, fat free, beans, cheese</p>
+                    <div class="end-data">
+                        <div class="ratings a-4_5">
+                            <span class="fa fa-star checked"></span>
+                            <p>4.9</p>
+                        </div>
+                        <div class="del-time">
+                            <p>35min</p>
+                        </div>
+                        <div class="price">
+                            $200 for 2
+                        </div>
+                    </div>
+                    <div class="more-btn-div"><a class="more-btn" href="#">More...</a></div>
+                    <hr class="card-hr">
+                </div>
+            </div>
+            <div class="card">
+                <img src="hillshire.jpg" alt="">
+                <div class="meta-data">
+                    <p class="title">Veg. Burger </p>
+                    <p class="rsturnt title"> - The Taj</p>
+                    <p class="tags">food, veg, fat free, beans, cheese</p>
+                    <div class="end-data">
+                        <div class="ratings a-4_5">
+                            <span class="fa fa-star checked"></span>
+                            <p>4.8</p>
+                        </div>
+                        <div class="del-time">
+                            <p>35min</p>
+                        </div>
+                        <div class="price">
+                            $200 for 2
+                        </div>
+                    </div>
+                    <div class="more-btn-div"><a class="more-btn" href="#">More...</a></div>
+                    <hr class="card-hr">
+                </div>
+            </div>
+            <div class="card">
+                <img src="hillshire.jpg" alt="">
+                <div class="meta-data">
+                    <p class="title">Veg. Burger</p>
+                    <p class="rsturnt title"> - The Taj</p>
+                    <p class="tags">food, veg, fat free, beans, cheese</p>
+                    <div class="end-data">
+                        <div class="ratings a-4_5">
+                            <span class="fa fa-star checked"></span>
+                            <p>4.7</p>
+                        </div>
+                        <div class="del-time">
+                            <p>35min</p>
+                        </div>
+                        <div class="price">
+                            $200 for 2
+                        </div>
+                    </div>
+                    <div class="more-btn-div"><a class="more-btn" href="#">More...</a></div>
+                    <hr class="card-hr">
+                </div>
+            </div>
+            <div class="card">
+                <img src="hillshire.jpg" alt="">
+                <div class="meta-data">
+                    <p class="title">Veg. Burger</p>
+                    <p class="rsturnt title"> - The Taj</p>
+                    <p class="tags">food, veg, fat free, beans, cheese</p>
+                    <div class="end-data">
+                        <div class="ratings a-4">
+                            <span class="fa fa-star checked"></span>
+                            <p>4.2</p>
+                        </div>
+                        <div class="del-time">
+                            <p>35min</p>
+                        </div>
+                        <div class="price">
+                            $200 for 2
+                        </div>
+                    </div>
+                    <div class="more-btn-div"><a class="more-btn" href="#">More...</a></div>
+                    <hr class="card-hr">
+                </div>
+            </div>
+            <div class="card">
+                <img src="hillshire.jpg" alt="">
+                <div class="meta-data">
+                    <p class="title">Veg. Burger</p>
+                    <p class="rsturnt title"> - The Taj</p>
+                    <p class="tags">food, veg, fat free, beans, cheese</p>
+                    <div class="end-data">
+                        <div class="ratings a-4_5">
+                            <span class="fa fa-star checked"></span>
+                            <p>4.5</p>
+                        </div>
+                        <div class="del-time">
+                            <p>35min</p>
+                        </div>
+                        <div class="price">
+                            $200 for 2
+                        </div>
+                    </div>
+                    <div class="more-btn-div"><a class="more-btn" href="#">More...</a></div>
+                    <hr class="card-hr">
+                </div>
+            </div>
+            <div class="card">
+                <img src="hillshire.jpg" alt="">
+                <div class="meta-data">
+                    <p class="title">Veg. Burger</p>
+                    <p class="rsturnt title"> - The Taj</p>
+                    <p class="tags">food, veg, fat free, beans, cheese</p>
+                    <div class="end-data">
+                        <div class="ratings a-4">
+                            <span class="fa fa-star checked"></span>
+                            <p>4.2</p>
+                        </div>
+                        <div class="del-time">
+                            <p>35min</p>
+                        </div>
+                        <div class="price">
+                            $200 for 2
+                        </div>
+                    </div>
+                    <div class="more-btn-div"><a class="more-btn" href="#">More...</a></div>
+                    <hr class="card-hr">
+                </div>
+            </div>
+            <div class="card">
+                <img src="hillshire.jpg" alt="">
+                <div class="meta-data">
+                    <p class="title">Veg. Burger</p>
+                    <p class="rsturnt title"> - The Taj</p>
+                    <p class="tags">food, veg, fat free, beans, cheese</p>
+                    <div class="end-data">
+                        <div class="ratings a-3_5">
+                            <span class="fa fa-star checked"></span>
+                            <p>3.8</p>
+                        </div>
+                        <div class="del-time">
+                            <p>35min</p>
+                        </div>
+                        <div class="price">
+                            $200 for 2
+                        </div>
+                    </div>
+                    <div class="more-btn-div"><a class="more-btn" href="#">More...</a></div>
+                    <hr class="card-hr">
+                </div>
+            </div>
+            <div class="card">
+                <img src="hillshire.jpg" alt="">
+                <div class="meta-data">
+                    <p class="title">Veg. Burger</p>
+                    <p class="rsturnt">The Taj</p>
+                    <p class="tags">food, veg, fat free, beans, cheese</p>
+                    <div class="end-data">
+                        <div class="ratings a-3_5">
+                            <span class="fa fa-star checked"></span>
+                            <p>3.8</p>
+                        </div>
+                        <div class="del-time">
+                            <p>35min</p>
+                        </div>
+                        <div class="price">
+                            $200 for 2
+                        </div>
+                    </div>
+                    <div class="more-btn-div"><a class="more-btn" href="#">More...</a></div>
+                    <hr class="card-hr">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <div class="space"></div> -->
+</body>
+
+</html>
